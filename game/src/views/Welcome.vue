@@ -16,9 +16,18 @@
                         LearningCMD - игра, которая научит тебя работать с командной строкой
                     </v-card-text>
                     <v-card-actions id="btnText" class="justify-space-around mx-auto flex-wrap">
-                        <v-btn outlined color="deep-purple lighten-5" class="text-uppercase my-4 mx-0" width="180" height="50">Демо</v-btn>
-                        <v-btn outlined color="deep-purple lighten-5" class="text-uppercase my-4 mx-0" width="180" height="50">Играть</v-btn>
-                        <v-btn outlined color="deep-purple lighten-5" class="text-uppercase my-4 mx-0" width="180" height="50">Инструкция</v-btn>
+                        <v-btn outlined color="deep-purple lighten-5" class="text-uppercase my-4 mx-0" width="180"
+                               height="50">
+                            Демо
+                        </v-btn>
+                        <router-link to="/levels">
+                            <v-btn outlined color="deep-purple lighten-5" class="text-uppercase my-4 mx-0" width="180"
+                                   height="50">Играть
+                            </v-btn>
+                        </router-link>
+                        <v-btn outlined color="deep-purple lighten-5" class="text-uppercase my-4 mx-0" width="180"
+                               height="50">Инструкция
+                        </v-btn>
                     </v-card-actions>
                 </v-card>
             </v-flex>
@@ -33,12 +42,13 @@
 </script>
 
 <style scoped>
-#container {
-    font-family: "Roboto Slab", serif !important;
-    font-weight: 400 !important;
-}
-#btnText{
-    font-family: Lato, sans-serif !important;
-    font-weight: 600 !important;
-}
+    #container {
+        font-family: "Roboto Slab", serif !important;
+        font-weight: 400 !important;
+    }
+
+    #btnText {
+        font-family: Lato, sans-serif !important;
+        font-weight: 600 !important;
+    }
 </style>

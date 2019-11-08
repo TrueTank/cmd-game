@@ -1,17 +1,11 @@
 <template>
-  <v-app>
-      <Welcome/>
-  </v-app>
+  <router-view/>
 </template>
 
 <script>
-import Welcome from '@/components/Welcome'
 
 export default {
   name: 'App',
-  components: {
-    Welcome
-  },
   data: () => ({
     //
   }),
